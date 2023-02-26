@@ -1,0 +1,30 @@
+---
+import Link from "../components/Link.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout title="Page not found">
+  <section class="container about" aria-label="about me">
+    <div
+      class="container"
+      style={{
+        display: "grid",
+        placeItems: "center",
+        textAlign: "center",
+        gap: "var(--space-sm)",
+      }}
+    >
+      <div>
+        <h1 class="h1">
+          oops. not all who wander are lost, but you seem to be.
+        </h1>
+      </div>
+      <Link
+        href="/"
+        style="primary"
+        text="Go Home"
+        icon={{ name: "tabler:home", side: "right" }}
+      />
+    </div>
+  </section>
+</MainLayout>
