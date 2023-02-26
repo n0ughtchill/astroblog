@@ -1,0 +1,17 @@
+---
+
+---
+
+<footer>
+    <small>
+        Copyright &copy; <span id="copyright"></span> | Except where otherwise noted, content on this site is licensed under a Creative Commons Attribution 4.0 International license
+    </small>
+</footer>
+
+<script>
+    const copyright = document.getElementById('copyright') as HTMLDivElement | null;
+
+    if (copyright != null) {
+    copyright.textContent = new Date().getFullYear().toString();
+    }
+</script>
